@@ -3,11 +3,8 @@ from package.config import *
 import requests as r
 from bs4 import BeautifulSoup
 import wunderpy2
-from google import search
 import wikipedia
 import wolframalpha
-import importlib
-google = importlib.import_module('')
 '''
     Reddit Section
 =======================
@@ -38,7 +35,7 @@ def recent_sub_posts(subreddit_name, limit):
 - Start up (Reddit, Quora etc.)
 - 
 '''
-
+'''
 # Google Section #
 # //// Input: Google fun ways to mess around with Raspberry pi \\\\ #
 def search_google(contents, glimit=10):
@@ -53,7 +50,7 @@ def search_google(contents, glimit=10):
             title_string = 'No title'
         print(title_string)
         print(url)
-
+'''
 # YouTube Music Section #
 # //// Input: Play Congratulations \\\\ #
 def play_youtube_video(video_choice):
@@ -78,23 +75,6 @@ def wolframalpha_question(question):
 def wikipedia_summary(searching_for, sentencesNumber):
     print(wikipedia.summary(searching_for, sentences=sentencesNumber))
 
-
-'''
-print("WIKIPEDIA SUMMARY THOMAS EDISON")
-wikipedia_summary('Thomas Edison', 3)
-print('\n\n\n')
-print("GOOGLE SEARCH THOMAS EDISON")
-search_google('Thomas Edison Biography', glimit=1)
-print('\n\n\n')
-print("LUCID DREAMING SUBREDDIT")
-recent_sub_posts('LucidDreaming', 5)
-print('\n\n\n')
-print("UNREAD INBOX")
-return_unread_inbox()
-print('\n\n\n')
-print("WOLFRAMALPHA")
-wolframalpha_question('What is the meaning of life?')
-'''
 '''
     Wunderlist Section
 ==========================
@@ -121,7 +101,7 @@ def generate_dictionary_list():
     for list in lists:
         dictionary_list.update({list['title']:list['id']})
 generate_dictionary_list()
-
+# Fix this #
 def generate_dictionary_task(list_name):
     tasks = wunClient.get_tasks(dictionary_list[list_name])
     for task in tasks:
@@ -134,7 +114,5 @@ def create_task(list, title, due_date):
 def complete_task(list, title):
     wunClient.update_task(dictionary_task[title], completed=True, revision=1)
 
-
-
-
-
+import sys
+def main(args):
