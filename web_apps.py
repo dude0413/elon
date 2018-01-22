@@ -113,6 +113,3 @@ def create_task(list, title, due_date):
 
 def complete_task(list, title):
     wunClient.update_task(dictionary_task[title], completed=True, revision=1)
-
-import sys
-def main(args):
