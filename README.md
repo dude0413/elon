@@ -4,7 +4,7 @@ Elon is a computer assistent that is based on Elon Musk because I found him to b
 
 Package includes the configuration file
 Testing includes different testing environments that I was working on
-- aimlTesting.py -> 
+- aimlTesting.py -> testing using the aiml library. Allowed for scripted responses. A little complicated tho.
 - Games.txt -> testing being able to open games using Elon
 - testing.py -> general testing file
 - testing.xml -> testing script AI stuffs
