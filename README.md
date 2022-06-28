@@ -1,3 +1,5 @@
+2022 Update: I am not sure that these libraries will work anymore...
+
 Elon is a computer assistent that is based on Elon Musk because I found him to be a pretty cool dude (I still do, but he's a little rough around the edges). Search the web, find out the weather for tomorrow, or play a YouTube video. Just say it and Elon does it!
 
 *Contents*
